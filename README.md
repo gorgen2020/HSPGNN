@@ -5,7 +5,7 @@ if you want to download the Electricity dataset, you can go to the citation of d
 2 If you want to change the missing rate or missing mode, you can open lib/data_preparation.py and change the p_fault and p_noise of the following function:
 	Electricity_mask_generator() for Electricity dataset.
 	pems_bay_mask_generator() for pems-bay dataset.
-3 If you want to run estimation of node importance, you can run the fit_flow.py
+
 
 
 
