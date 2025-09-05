@@ -1,7 +1,6 @@
 # -*- coding:utf-8 -*-
 
 import numpy as np
-import mxnet as mx
 
 import pandas as pd
 import h5py
