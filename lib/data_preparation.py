@@ -63,7 +63,7 @@ def read_and_generate_dataset(graph_signal_matrix_filename,
             shape is (num_of_samples, num_of_vertices, num_for_predict)
     '''
     if graph_signal_matrix_filename == 'Electricity':
-        path = 'data\Electricity_seqlen1_00masked\datasets.h5'
+        path = 'data/Electricity_seqlen1_00masked/datasets.h5'
         with h5py.File(path, "r") as hf:
             # read data from h5 file
             X_train = hf['train']["X"][:]
@@ -268,7 +268,6 @@ def read_and_generate_dataset(graph_signal_matrix_filename,
 
         all_samples = []
 
-        # 第一次mask筛选
         for idx in range(data_seq.shape[0]):
             sample = get_sample_indices(data_seq, data_seq_mask, mask, mask, num_of_weeks, num_of_days,
                                         num_of_hours, idx, num_for_predict,
@@ -1025,6 +1024,8 @@ def read_and_generate_dataset(graph_signal_matrix_filename,
         training_set.append(np.concatenate((training_set1[5], training_set2[5], training_set3[5]), axis=0))
         training_set.append(np.concatenate((training_set1[6], training_set2[6], training_set3[6]), axis=0))
         training_set.append(np.concatenate((training_set1[7], training_set1[7], training_set1[7]), axis=0))
+
+
     elif graph_signal_matrix_filename == 'Electricity':
         split_line1 = int(len(all_samples) - 2 * 29183)
         split_line2 = int(len(all_samples) - 29183)

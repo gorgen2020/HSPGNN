@@ -56,6 +56,8 @@ class HSPGCN(nn.Module):
         self.fc4 = torch.nn.Linear(200, tem_size)
         
     def forward(self,x_w,x_w_mask,x_d,x_d_mask,x_r,x_r_mask,train_t_mask,supports):
+
+
         x=torch.cat((x_w,x_d,x_r),-1)
         A=supports
 
