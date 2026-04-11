@@ -69,7 +69,7 @@ https://pan.baidu.com/s/1V6gp5VhpUxJ8wnzGBbA0wQ?pwd=kpxm access code: kpxm
 
 ### Notes on missing-value simulation
 
-Missing masks are generated in `lib/utils.py`:
+Missing masks are generated in `lib/data_preparation.py`:
 - Line 152 ---`pems_bay_mask_generator()` for **pems_bay**
 - Line 79 --- `Electricity_mask_generator()` for **Electricity**
 
