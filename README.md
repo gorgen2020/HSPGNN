@@ -153,16 +153,7 @@ Training produces:
 - saved normalization statistics
 - prediction `.npz` results in the project root
 
-## Reproducibility
 
-For more reproducible runs:
-1. fix `--seed`
-2. report the exact dataset split and corruption settings
-3. record the PyTorch and CUDA versions used
-
-## Limitations
-
-This repository is a cleaned research codebase, not yet a packaged library. Some dataset paths are still hard-coded in the original preprocessing logic and may need adjustment for your local environment.
 
 ## Citation
 
@@ -179,6 +170,10 @@ Suggested BibTeX template for the repository:
   year={2024}
 }
 ```
+
+## Limitations
+
+This repository is a cleaned research codebase, not yet a packaged library. Some dataset paths are still hard-coded in the original preprocessing logic and may need adjustment for your local environment.
 
 
 ## For the Inference and the imputation Outputs
