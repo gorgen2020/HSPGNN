@@ -171,9 +171,6 @@ Suggested BibTeX template for the repository:
 }
 ```
 
-## Limitations
-
-This repository is a cleaned research codebase, not yet a packaged library. Some dataset paths are still hard-coded in the original preprocessing logic and may need adjustment for your local environment.
 
 
 ## For the Inference and the imputation Outputs
@@ -221,7 +218,14 @@ python HSPGCN.py \
   --device cuda:0 \
   --max_epoch 50
 ```
- 
+
+
+## Reproducibility
+
 If you are interested in training and the reproduced results, you can download the saved results and training parameters at each epoch through:
 https://pan.baidu.com/s/1oApZ1IYns4-GoQCrSmFmSg?pwd=y65x access code: y65x
+
+## Limitations
+
+This repository is a cleaned research codebase, not yet a packaged library. Some dataset paths are still hard-coded in the original preprocessing logic and may need adjustment for your local environment.
 
