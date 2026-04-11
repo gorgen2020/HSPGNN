@@ -18,6 +18,16 @@ This repository has been cleaned up for GitHub sharing so that other researchers
 ├── densities.py             # flow-related density functions
 ├── fit_flow.py              # normalizing-flow training utilities
 ├── normalizing_flows.py     # flow modules
+├── src/
+│   ├── normalizing_flows.py # normalizing flow
+│   └── utils.py             # normalizing flow helpers
+├── save_params/
+│   ├── block-HSPGCN_L_pems_bay_epoch_48_0.08.params # saved block missing pems-bay
+│   ├── point-HSPGCN_L_pems_bay_epoch_39_0.08.params # saved point missing pems-bay
+│   ├── block---HSPGCN_Electricity_epoch_35_0.01.params # saved block missing Electricity
+│   ├── point--HSPGCN_Electricity_epoch_50_0.01.params # saved point missing Electricity
+│   ├── HSPGCN_AQI_epoch_50_2.02.paramss             # saved missing AQI
+│   └── HSPGCN_AQI36_epoch_38_1.18.params            # saved missing AQI36
 ├── lib/
 │   ├── data_preparation.py  # dataset loading and mask generation
 │   ├── metrics.py           # evaluation metrics
