@@ -155,22 +155,6 @@ Training produces:
 
 
 
-## Citation
-
-If you use this repository in your work, please cite the corresponding paper and consider citing the code repository as well.
-
-Suggested BibTeX template for the repository:
-
-```bibtex
-@inproceedings{liang2024higher,
-  title={Higher-order spatio-temporal physics-incorporated graph neural network for multivariate time series imputation},
-  author={Liang, Guojun and Tiwari, Prayag and Nowaczyk, S{\l}awomir and Byttner, Stefan},
-  booktitle={Proceedings of the 33rd ACM international conference on information and knowledge management},
-  pages={1356--1366},
-  year={2024}
-}
-```
-
 
 
 ## For the Inference and the imputation Outputs
@@ -217,6 +201,22 @@ python HSPGCN.py \
   --num_point 370 \
   --device cuda:0 \
   --max_epoch 50
+```
+
+## Citation
+
+If you use this repository in your work, please cite the corresponding paper and consider citing the code repository as well.
+
+Suggested BibTeX template for the repository:
+
+```bibtex
+@inproceedings{liang2024higher,
+  title={Higher-order spatio-temporal physics-incorporated graph neural network for multivariate time series imputation},
+  author={Liang, Guojun and Tiwari, Prayag and Nowaczyk, S{\l}awomir and Byttner, Stefan},
+  booktitle={Proceedings of the 33rd ACM international conference on information and knowledge management},
+  pages={1356--1366},
+  year={2024}
+}
 ```
 
 
